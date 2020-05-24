@@ -1,3 +1,6 @@
+import sys
+from os.path import dirname
+
 def sample(first, last, **userinfo):
   profile = {}
   profile["firstname"] = first 
@@ -14,6 +17,9 @@ def addNum(b, a,  *nums):
   for num in nums:
     sum += num
   print(sum)
+  
+def info():
+  print("Filename: ", __file__)
   
   
 def printComp(d2):
